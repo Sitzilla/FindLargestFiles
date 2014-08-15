@@ -49,10 +49,11 @@ public class FileFinder{
 				if(child.isFile()){
 					String fileName = child.getName();
 					double fileSize = child.length();
-
-					fileArray.addFileToArray(fileName, fileSize);
-					fileArray.sortArray();
-					
+					//checks if the size of the folder being checked in the folder is greater than the first item in the BiggestFiles array
+					if (fileArray.checkGreaterThanStandard(fileSize, fileArray.getSecond(0))== true){
+						fileArray.addFileToArray(fileName, fileSize);
+						fileArray.sortArray();
+					}
 				}
 				else {
 					//recursive call if the path is not null

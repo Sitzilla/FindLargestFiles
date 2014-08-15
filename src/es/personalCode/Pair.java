@@ -1,6 +1,6 @@
 package es.personalCode;
 
-//class that represents a hash of a String and an associated double.  These are meant to represent a pairing of file name and file size.
+//class that represents a combination of a String and an associated double.  These are meant to represent a pairing of file name and file size.
 public class Pair {
 	private String first;
 	private double second;
