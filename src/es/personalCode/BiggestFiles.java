@@ -55,7 +55,7 @@ public class BiggestFiles {
 		double tempVariable1 = 0;
 		String tempVariable2 = "x";
 		
-		for (int i=0;i<arrayOfFiles.length;i++){
+		for (int i=0;i<arrayOfFiles.length-1;i++){
 			if (arrayOfFiles[i].getSecond()>arrayOfFiles[i+1].getSecond()){
 				tempVariable1 = arrayOfFiles[i+1].getSecond();
 				tempVariable2 = arrayOfFiles[i+1].getFirst();
